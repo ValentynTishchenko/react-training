@@ -1,12 +1,12 @@
 All tasks should be implemented in two ways with class components and functional components
 
-- implement timer that will be able to display time and will have next functionality:
+1. implement timer that will be able to display time and will have next functionality:
     - stopping
     - resetting
     - continuing
-- create application that allows to increase and decrease a counter value (display this value), step of increasing and decreasing should be able to be edited via input
-- display list of posts fetched from https://jsonplaceholder.typicode.com/, handle loading\error states, implement refresh button and ability to search by userId
-- implement a task board with next functionality:
+2. create application that allows to increase and decrease a counter value (display this value), step of increasing and decreasing should be able to be edited via input
+3. display list of posts fetched from https://jsonplaceholder.typicode.com/, handle loading\error states, implement refresh button and ability to search by userId
+4. implement a task board with next functionality:
     - ability to add and name columns (remove as well)
     - ability to add todos to each column (remove as well)
     - ability to update a todo name;

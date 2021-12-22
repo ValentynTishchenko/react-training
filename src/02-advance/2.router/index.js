@@ -24,6 +24,7 @@ export const RootComponent = () => {
       <Route path={ApplicationRoutes.USERS} element={<UsersPage/>}/>
       <Route path={ApplicationRoutes.USER} element={<UserPage/>}/>
       <Route path={ApplicationRoutes.NOT_FOUND} element={<NotFoundPage/>}/>
+
       <Route path="*" element={<Navigate to={ApplicationRoutes.NOT_FOUND}/>}/>
     </Routes>
   </BrowserRouter>;

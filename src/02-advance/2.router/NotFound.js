@@ -1,5 +1,4 @@
 import {useLocation, useNavigate} from 'react-router-dom';
-import {} from 'history';
 
 import {ApplicationRoutes} from "./constants";
 

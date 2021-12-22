@@ -3,8 +3,10 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {decreaseCounter, increaseCounter} from "./counterActions";
 
+const selectCounterValue = (state) => state.counter.count;
+
 export const Counter = () => {
-  const value = useSelector(({counter}) => counter.count);
+  const count = useSelector(selectCounterValue);
   const dispatch = useDispatch();
 
   const onIncreaseClick = () => {
@@ -21,7 +23,7 @@ export const Counter = () => {
     <p>Counter value:</p>
     <p>
       <input type="button" value="Decrease" onClick={onDecreaseClick}/>
-      {' '}{value}{' '}
+      {' '}{count}{' '}
       <input type="button" value="Increase" onClick={onIncreaseClick}/>
     </p>
   </section>;

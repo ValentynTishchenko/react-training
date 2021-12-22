@@ -1,24 +1,24 @@
 import {useDispatch, useSelector} from "react-redux";
 import {loadTodosAction, loadTodosErrorAction, loadTodosSuccessAction, removeTodoAction} from "./todosActions";
-// import {fetchTodos} from "./fetchTodos";
+import {fetchTodos} from "./fetchTodos";
 
 export const TodoList = () => {
   const {isLoading, todos} = useSelector(({todos}) => todos);
   const dispatch = useDispatch();
 
   const onLoadTodosClick = async () => {
-    // dispatch(fetchTodos());
+    dispatch(fetchTodos());
 
-    try {
-      dispatch(loadTodosAction());
-
-      const res = await fetch('https://jsonplaceholder.typicode.com/todos');
-      const data = await res.json();
-
-      dispatch(loadTodosSuccessAction(data));
-    } catch (e) {
-      dispatch(loadTodosErrorAction());
-    }
+    // try {
+    //   dispatch(loadTodosAction());
+    //
+    //   const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+    //   const data = await res.json();
+    //
+    //   dispatch(loadTodosSuccessAction(data));
+    // } catch (e) {
+    //   dispatch(loadTodosErrorAction());
+    // }
 
   };
 

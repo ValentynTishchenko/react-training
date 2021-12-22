@@ -17,6 +17,6 @@ export const decreaseCounter = () => {
 export const updateCounter = (value) => {
   return {
     type: UPDATE_COUNTER,
-    payload: {value}
+    payload: value
   };
 };

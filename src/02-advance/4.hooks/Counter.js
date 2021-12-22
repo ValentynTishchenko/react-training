@@ -35,4 +35,3 @@ export const Counter = () => {
       </section>
     );
   }
-;

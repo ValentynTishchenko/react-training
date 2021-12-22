@@ -21,12 +21,22 @@ const Layout = ({children}) => {
   </section>;
 };
 
+const initValue = {
+  mode: 'dark',
+};
+
+
+const ModeContext = React.createContext(initValue);
+const UserAuthContext = React.createContext(initValue);
+
 export const RootComponent = () => {
-  return <ModeContextProvider>
+  const [mode, setMode] = React.useState(initValue.mode);
+
+  return <ModeContext.Provider value={{mode, setMode}}>
     <Layout>
       <HeaderComponent/>
       <ModeSelect/>
       <HomePage/>
     </Layout>
-  </ModeContextProvider>;
+  </ModeContext.Provider>;
 };

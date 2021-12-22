@@ -1,0 +1,11 @@
+- rewrite todolist (task #3) with using context
+- rewrite todolist  (task #3) with using redux
+- rewrite task board task (task #4) with using context
+- rewrite task board with (task #4) with using redux
+
+- create a simple application
+    - login page (persist all data to local storage)
+    - user settings page
+    - Welcome page
+    - handle 403 errors
+    - redirect to the login page if a user is not authorized.

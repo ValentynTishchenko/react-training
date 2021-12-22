@@ -13,3 +13,5 @@ export const ModeContextProvider = ({children}) => {
     {children}
   </ModeContext.Provider>;
 };
+
+export const UserAuthContext = React.createContext({});
